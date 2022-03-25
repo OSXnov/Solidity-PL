@@ -1,0 +1,71 @@
+{
+	"compiler": {
+		"version": "0.8.6+commit.11564f7e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "airDrop",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "validateOranges",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"DecisionMaking(ifElse).sol": "DecisionMaking"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"DecisionMaking(ifElse).sol": {
+			"keccak256": "0x697d2dfa7ccbc88ac6227b58ad5053208641bb8d1ceab48fd918306961c0fe7a",
+			"urls": [
+				"bzz-raw://b1f1cedf3a0fe6e65a18ef0b030d90c6dda3da4839819598cd56e852c5a09c57",
+				"dweb:/ipfs/QmYdNwSCcSyHTySRNXaXN3Kank1ux2gvrqbfpekoBWQJTW"
+			]
+		}
+	},
+	"version": 1
+}
