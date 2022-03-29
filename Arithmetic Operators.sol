@@ -59,6 +59,40 @@ contract AssignmentOperator{
         //return c + c + b; //rewrite this result in assignment
         //return c = c + c + b;
 
-        return c += c + b;
+        return c += c + b; // short handed assignment
+    }
+}
+
+
+// Final Operator Exercise
+// 1. create a contract called final exercises (FinalExercise)
+// 2. assign each variable the following : a should equal 300, b should equal 12,
+// and f should equal 47
+// 3. create a function called finalize that is public and viewable which returns a local variable d
+// 4. initialize d to 23
+// 5. return d in short handed assignment form to multiply itself and then 
+// substracted by b
+
+// 6. bonus make the function conditional so that it will only return the multiplication if a is greater than or equal to a and b is less than f otherwise d should return 23
+
+pragma solidity ^0.5.0;
+
+contract FinalExercise{
+    uint a = 300;
+    uint b = 12;
+    uint f = 47;
+
+    function finalize() public view returns(uint){
+        uint d = 23;
+
+        if (a > a && b < f)
+        {
+            d*=d;
+        return d - b;
+        }
+        else {
+            return d;
+        }
+        
     }
 }
