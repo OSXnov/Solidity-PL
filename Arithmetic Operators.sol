@@ -46,3 +46,19 @@ contract HWLogicOperator{
 }
 
 // When deploying result is now 544 because the condition have met
+
+pragma solidity ^0.5.0;
+contract AssignmentOperator{
+    uint b = 4;
+    uint a = 3;
+
+    function assign() public view returns(uint){
+        uint c;
+        // assigning c = b
+        //return c = b;
+        //return c + c + b; //rewrite this result in assignment
+        //return c = c + c + b;
+
+        return c += c + b;
+    }
+}
