@@ -44,6 +44,6 @@ contract ComparisonOperators {
    
 
    function compare() public{
-      require() //
+      require(a > b, 'That is false'); //
    }
 }
