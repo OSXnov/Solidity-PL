@@ -36,14 +36,8 @@ contract loopContract {
 
 
 
-// Looping Practice: 
 
-//1. create a contract myLoopingPracticeContract and place all the following code within:
-// 2. create a list that ranges from 1 to 20 called longList
-// 3. create a list called numbersList of the following numbers: 1, 4, 34, 56
-// 4. create a function that loops through numbersList and returns a true value if the number
-//  that the user inputs exists in the list otherwise it should return false 
-// 5. create a function that loops trhough and returns how many even numbers there are in the long list
+
 
 
 //create a function that can check if two numbers are divisible by each other - or are they
@@ -60,5 +54,48 @@ contract loopContract {
             return false;
         }
     }
+
+}
+
+
+// Looping Practice: 
+
+//1. create a contract myLoopingPracticeContract and place all the following code within:
+// 2. create a list that ranges from 1 to 20 called longList
+// 3. create a list called numbersList of the following numbers: 1, 4, 34, 56
+// 4. create a function that loops through numbersList and returns a true value if the number
+//  that the user inputs exists in the list otherwise it should return false 
+// 5. create a function that loops through and returns how many even numbers there are in the long list
+
+contract myLoopingPracticeContract{
+
+    uint [] public longList = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+    uint [] public numbersList = [1,4,34,56];
+
+    
+    function checkEvenNumber(uint _num) public view returns(bool)
+    {
+        if (_num % 2 == 0){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+    function CheckIfNumberExist() public view returns(uint){
+        uint count = 0;
+        for (uint i = 0; i< numbersList.length; i++ )
+        {
+            if (checkEvenNumber(numbersList[i]))
+            {
+                count ++;
+            }
+        }
+        return count++;
+    }
+
+
+
+
 
 }
