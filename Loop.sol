@@ -82,17 +82,17 @@ contract myLoopingPracticeContract{
             return false;
         }
     }
-    function CheckIfNumberExist() public view returns(uint){
-        uint count = 0;
+    function CheckIfNumberExist(uint userNumber) public view returns(uint){
+        uint numberExist = false ;
         for (uint i = 0; i< numbersList.length; i++ )
         {
-            if (checkEvenNumber(numbersList[i]))
+            if (checkEvenNumber(numbersList[i] == userNumber ))                        //doesnt work
             {
-                count ++;
+                numberExist = true;
             }
         }
-        return count++;
-    }
+        return numberExist;
+    }      
 
 
 
